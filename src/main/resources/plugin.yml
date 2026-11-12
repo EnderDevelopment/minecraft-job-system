@@ -1,0 +1,17 @@
+name: Jobs
+version: 1.0.0
+main: com.enderdevelopment.plugin.Main
+api-version: "1.21"
+description: Create jobs, accept applications, and manage employment.
+commands:
+  job:
+    description: Browse and manage jobs.
+    usage: /job <list|info|create|edit|delete|apply|applications|accept|reject|quit|mine>
+    aliases: [jobs]
+permissions:
+  jobs.use:
+    description: Allows players to use the jobs system.
+    default: true
+  jobs.admin:
+    description: Allows management of any job.
+    default: op
